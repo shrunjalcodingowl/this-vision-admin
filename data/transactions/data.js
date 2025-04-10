@@ -1,0 +1,244 @@
+// import img1 from "../../assets/images/users/1.jpg";
+// import img2 from "../../assets/images/users/2.jpg";
+// import img3 from "../../assets/images/users/3.jpg";
+// import img4 from "../../assets/images/users/4.jpg";
+// import img5 from "../../assets/images/users/5.jpg";
+
+const Bookings = [
+  {
+    imgsrc: '/images/users/4.jpg',
+    name: "Nirav Joshi",
+    customer_id: "CID58914484",
+    mobile: "0405895778",
+    transaction_id: "895645943",
+    addresses: "2",
+    amount: "50",
+    credits: "5",
+    date: "25 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.primary.main,
+        text: "Y",
+      },
+      {
+        color: (theme) => theme.palette.error.main,
+        text: "X",
+      },
+    ],
+    status: "Active",
+    weeks: "40",
+    budget: "2.4",
+  },
+  {
+    imgsrc: '/images/users/1.jpg',
+    name: "Sunil Joshi",
+    customer_id: "CID58911121",
+    mobile: "0405895723",
+    transaction_id: "895675925",
+    addresses: "2",
+    amount: "50",
+    credits: "4",
+    date: "23 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.secondary.main,
+        text: "S",
+      },
+      {
+        color: (theme) => theme.palette.error.main,
+        text: "D",
+      },
+    ],
+    status: "Active",
+    weeks: "11",
+    budget: "3.9",
+  },
+  {
+    imgsrc: '/images/users/2.jpg',
+    name: "Andrew McDown",
+    customer_id: "CID58914783",
+    mobile: "0405895780",
+    transaction_id: "895645286",
+    addresses: "3",
+    amount: "50",
+    credits: "15",
+    date: "22 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.primary.main,
+        text: "A",
+      },
+      {
+        color: (theme) => theme.palette.success.main,
+        text: "X",
+      },
+      {
+        color: (theme) => theme.palette.secondary.main,
+        text: "N",
+      },
+    ],
+    status: "Pending",
+    weeks: "19",
+    budget: "24.5",
+  },
+  {
+    imgsrc: '/images/users/3.jpg',
+    name: "Christo Jamil",
+    customer_id: "CID58914748",
+    mobile: "0405898597",
+    transaction_id: "895642611",
+    addresses: "2",
+    amount: "50",
+    credits: "5",
+    date: "25 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.error.main,
+        text: "X",
+      },
+    ],
+    status: "Completed",
+    weeks: "30",
+    budget: "12.8",
+  },
+
+  {
+    imgsrc: '/images/users/5.jpg',
+    name: "Micheal Doe",
+    customer_id: "CID58914774",
+    mobile: "0405897894",
+    transaction_id: "895649256",
+    addresses: "1",
+    amount: "50",
+    credits: "4",
+    date: "25 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.secondary.main,
+        text: "S",
+      },
+    ],
+    status: "Cancel",
+    weeks: "1",
+    budget: "9.3",
+  },
+  {
+    imgsrc: '/images/users/4.jpg',
+    name: "Nirav Joshi",
+    customer_id: "CID58914484",
+    mobile: "0405895714",
+    transaction_id: "895645696",
+    addresses: "4",
+    amount: "50",
+    credits: "20",
+    date: "25 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.primary.main,
+        text: "Y",
+      },
+      {
+        color: (theme) => theme.palette.error.main,
+        text: "X",
+      },
+    ],
+    status: "Active",
+    weeks: "16",
+    budget: "2.4",
+  },
+  {
+    imgsrc: '/images/users/1.jpg',
+    name: "Sunil Joshi",
+    customer_id: "CID58914234",
+    mobile: "0405897844",
+    transaction_id: "895645588",
+    addresses: "1",
+    amount: "50",
+    credits: "5",
+    date: "25 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.secondary.main,
+        text: "S",
+      },
+      {
+        color: (theme) => theme.palette.error.main,
+        text: "D",
+      },
+    ],
+    status: "Active",
+    weeks: "12",
+    budget: "3.9",
+  },
+  {
+    imgsrc: '/images/users/2.jpg',
+    name: "Andrew McDownland",
+    customer_id: "CID58914739",
+    mobile: "0405895888",
+    transaction_id: "895647887",
+    addresses: "2",
+    amount: "50",
+    credits: "10",
+    date: "25 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.primary.main,
+        text: "A",
+      },
+      {
+        color: (theme) => theme.palette.warning.main,
+        text: "X",
+      },
+      {
+        color: (theme) => theme.palette.secondary.main,
+        text: "N",
+      },
+    ],
+    status: "Pending",
+    weeks: "14",
+    budget: "24.5",
+  },
+  {
+    imgsrc: '/images/users/3.jpg',
+    name: "Christopher Jamil",
+    customer_id: "CID58914774",
+    mobile: "0405891845",
+    transaction_id: "895643678",
+    addresses: "1",
+    amount: "50",
+    credits: "5",
+    date: "19 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.error.main,
+        text: "X",
+      },
+    ],
+    status: "Completed",
+    weeks: "12",
+    budget: "12.8",
+  },
+
+  {
+    imgsrc: '/images/users/5.jpg',
+    name: "Micheal Doe",
+    customer_id: "CID58914785",
+    mobile: "04058957796",
+    transaction_id: "895647447",
+    addresses: "2",
+    amount: "50",
+    credits: "10",
+    date: "15 Feb 2025",
+    teams: [
+      {
+        color: (theme) => theme.palette.secondary.main,
+        text: "S",
+      },
+    ],
+    status: "Cancel",
+    weeks: "9",
+    budget: "9.3",
+  },
+];
+
+export default Bookings;
